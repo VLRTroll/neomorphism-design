@@ -45,7 +45,13 @@ input[type='color'] {
 	border-radius: 50%;
 }
 
-input[type='color']::-webkit-color-swatch,
+input[type='color']::-webkit-color-swatch {
+	border: none;
+	border-radius: 50%;
+
+	box-shadow: 16px 10px 48px rgba(136, 165, 191, 0.58), -16px -2px 56px #ffffff;
+}
+
 input[type='color']::-moz-color-swatch {
 	border: none;
 	border-radius: 50%;
