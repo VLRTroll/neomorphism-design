@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Generate Linear Gradient</title>
+	</head>
+
+	<body>
+		<div class="color-container">
+			<div class="color">
+				<div class="title-container"><h1>Current color: #828282</h1></div>
+
+				<input type="color" value="#828282" />
+			</div>
+
+			<div class="color">
+				<div class="title-container"><h1>Target color: #eb5757</h1></div>
+
+				<input type="color" value="#eb5757" />
+			</div>
+		</div>
+
+		<button class="main-button">Generate CSS</button>
+
+		<div class="result-container">
+			<p><b>background:</b> linear-gradient(to right, #828282, #eb5757);</p>
+
+			<div class="tooltip">
+				<span class="tooltiptext" id="myTooltip">Text copied</span>
+
+				<button class="main-button">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						width="18px"
+						height="18px"
+					>
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path
+							d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</body>
+
+	<script src="utils/copyToClipboard.js"></script>
+	<script src="utils/filterGenerate.js"></script>
+	<script src="script.js"></script>
+</html>

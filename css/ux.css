@@ -1,0 +1,29 @@
+input[type='color']:focus {
+	box-shadow: -16px -2px 56px #ffffff, 16px 10px 48px rgba(136, 165, 191, 0.58),
+		inset 16px 10px 48px rgba(136, 165, 191, 0.58),
+		inset -16px -2px 56px #ffffff;
+}
+
+input[type='color']:focus::-webkit-color-swatch {
+	box-shadow: 16px 10px 48px rgba(136, 165, 191, 0.58), -16px -2px 56px #ffffff;
+}
+
+button:active {
+	color: rgba(49, 69, 106, 0.7);
+
+	box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.54), -4px -2px 16px #ffffff,
+		inset 4px 2px 16px rgba(136, 165, 191, 0.54), inset -4px -2px 16px #ffffff;
+
+	color: linear-gradient(
+		175.32deg,
+		rgba(72, 100, 125, 0.8) 12.22%,
+		rgba(107, 130, 153, 0.8) 125.11%,
+		rgba(218, 226, 235, 0.8) 225.46%,
+		rgba(140, 162, 183, 0.8) 340.86%,
+		rgba(237, 242, 247, 0.8) 493.89%
+	);
+}
+
+button:active svg {
+	fill: rgba(49, 69, 106, 0.7);
+}
