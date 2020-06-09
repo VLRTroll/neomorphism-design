@@ -4,7 +4,8 @@ input[type='color']:focus {
 		inset -16px -2px 56px #ffffff;
 }
 
-input[type='color']:focus::-webkit-color-swatch {
+input[type='color']:focus::-webkit-color-swatch,
+input[type='color']:focus::-moz-color-swatch {
 	box-shadow: 16px 10px 48px rgba(136, 165, 191, 0.58), -16px -2px 56px #ffffff;
 }
 
