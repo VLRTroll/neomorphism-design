@@ -9,6 +9,7 @@ A simple practice in Neomorphism design.
 - Neumorphism design
 - Color Input Styling
 - Copy to Clipboard
+- Gif mockup
 
 ---
 
